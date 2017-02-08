@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Codilar Technologies Pvt. Ltd.
+ * @category    Codilar
+ * @package    Coupon
+ * @copyright   Copyright (c) 2016 Codilar. (http://www.codilar.com)
+ * @purpose     Local codepool xml config.
+ * @author       Codilar Team
+ **/
+-->
+<config>
+    <modules>
+        <Codilar_Coupon>
+            <version>0.1.3</version>
+        </Codilar_Coupon>
+    </modules>
+    <global>
+        <!-- Define helper directory -->
+        <helpers>
+            <codilar_coupon>
+                <class>Codilar_Coupon_Helper</class>
+            </codilar_coupon>
+        </helpers>
+        <models>
+            <codilar_coupon>
+                <class>Codilar_Coupon_Model</class> <!-- Location of all model class files -->
+            </codilar_coupon>
+        </models>
+        <events>
+            <salesrule_validator_process>
+                <observers>
+                    <Codilar_Coupon_Model_Observer>
+                        <type>singleton</type>
+                        <class>codilar_coupon/observer</class>
+                        <method>saveOrderDetailsInHistory</method>
+                    </Codilar_Coupon_Model_Observer>
+                </observers>
+            </salesrule_validator_process>
+            <controller_action_predispatch_checkout_cart_couponPost>
+                <observers>
+                    <Codilar_Coupon_Model_Observer>
+                        <type>singleton</type>
+                        <class>codilar_coupon/observer</class>
+                        <method>removeCustomPrice</method>
+                    </Codilar_Coupon_Model_Observer>
+                </observers>
+            </controller_action_predispatch_checkout_cart_couponPost>
+        </events>
+    </global>
+    <default>
+        <codilar_coupon>
+            <settings>
+                <enabled>1</enabled>
+            </settings>
+        </codilar_coupon>
+    </default>
+</config>

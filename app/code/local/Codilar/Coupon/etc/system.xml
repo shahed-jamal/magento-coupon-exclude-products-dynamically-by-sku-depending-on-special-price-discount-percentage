@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <codilar>
+            <label>Codilar</label>
+            <sort_order>1</sort_order>
+        </codilar>
+    </tabs>
+    <sections>
+        <!--NEW CONFIG HERE-->
+        <customconfig>
+            <label>Coupon Code Custom Config</label>
+            <tab>codilar</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>0</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+                <coupon translate="label">
+                    <label>Marketplace Custom Configuration</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>0</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <expanded>1</expanded>
+                    <fields>
+                        <couponCode translate="label">
+                            <label>Coupon Code</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Enter the coupon code for which you want to remove special price]]></comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </couponCode>
+                        <discountPercentage translate="label">
+                            <label>Discount Percentage</label>
+                            <frontend_type>text</frontend_type>
+                            <comment><![CDATA[Enter discount percentage for above coupon]]></comment>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </discountPercentage>
+                    </fields>
+                </coupon>
+            </groups>
+        </customconfig>
+    </sections>
+</config>
