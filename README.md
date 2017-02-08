@@ -1,0 +1,2 @@
+# magento-coupon-exclude-products-dynamically-by-sku-depending-on-special-price-discount-percentage
+The Magento module is written with the goal of applying a discount to all products of cart. But there are one condition if one product have already other discount in special price then this module will reset the price in cart and then apply the coupon. Also, this module will exclude products which have more discounts in special price than the discount will be applied by coupon.
