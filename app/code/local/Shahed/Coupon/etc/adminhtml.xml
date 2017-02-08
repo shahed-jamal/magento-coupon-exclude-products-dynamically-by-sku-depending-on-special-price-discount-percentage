@@ -1,4 +1,13 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * @category    Magento Module
+ * @package     Coupon
+ * @copyright   Copyright (c) 2017 Shahed Jamal.
+ * @purpose     Local codepool xml config.
+ * @author      Shahed Jamal
+ **/
+-->
 <config>
     <acl>
         <resources>
@@ -11,7 +20,7 @@
                         <children>
                             <config>
                                 <children>
-                                    <customconfig translate="title" module="codilar_coupon">
+                                    <customconfig translate="title" module="shahed_coupon">
                                         <title>Coupon code config</title>
                                     </customconfig>
                                 </children>

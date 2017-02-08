@@ -1,16 +1,25 @@
 <?xml version="1.0"?>
+<!--
+/**
+ * @category    Magento Module
+ * @package     Coupon
+ * @copyright   Copyright (c) 2017 Shahed Jamal.
+ * @purpose     Local codepool xml config.
+ * @author      Shahed Jamal
+ **/
+-->
 <config>
     <tabs>
-        <codilar>
-            <label>Codilar</label>
+        <shahed>
+            <label>Shahed Module</label>
             <sort_order>1</sort_order>
-        </codilar>
+        </shahed>
     </tabs>
     <sections>
         <!--NEW CONFIG HERE-->
         <customconfig>
             <label>Coupon Code Custom Config</label>
-            <tab>codilar</tab>
+            <tab>shahed</tab>
             <frontend_type>text</frontend_type>
             <sort_order>0</sort_order>
             <show_in_default>1</show_in_default>

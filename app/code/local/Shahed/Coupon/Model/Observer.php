@@ -1,13 +1,12 @@
 <?php
 /**
- * Codilar Technologies Pvt. Ltd.
- * @category    Codilar
- * @package    Coupon
- * @copyright   Copyright (c) 2016 Codilar. (http://www.codilar.com)
- * @purpose     Main Observer
- * @author       Codilar Team
+ * @category    Magento Module
+ * @package     Coupon
+ * @copyright   Copyright (c) 2017 Shahed Jamal.
+ * @purpose     Local codepool xml config.
+ * @author      Shahed Jamal
  **/
-class Codilar_Coupon_Model_Observer
+class Shahed_Coupon_Model_Observer
 {
 
     public function __construct()
