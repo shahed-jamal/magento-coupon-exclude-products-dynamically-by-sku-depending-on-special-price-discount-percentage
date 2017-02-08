@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config>
     <modules>
-        <Codilar_Coupon>
+        <Shahed_Coupon>
             <active>true</active>
             <codePool>local</codePool>
-        </Codilar_Coupon>
+        </Shahed_Coupon>
     </modules>
 </config>
